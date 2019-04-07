@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Мишка</title>
+</head>
+<body>
+
+	<header class="page-header">
+		<a class="page-header__logo">	
+			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
+		</a>
+
+		<nav class="main-nav">
+			<div class="main-nav__wrapper">
+				<button class="main-nav__toggle" type="button">Открыть меня</button>
+
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="catalog.html">Каталог товаров</a>
+					</li>
+
+					<li class="site-list__item">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
+
+					<li class="site-list__item">
+						<a class="site-list__search" href="search.html">Поиск по сайту</a>
+					</li>
+
+					<li class="site-list__item">
+						<a class="site-list__basket" href="basket.html">Корзина: пока пуста</a>
+					</li>
+				</ul>
+				<button class="main-nav__close" type="button">Закрыть</button>
+			</div>			
+		</nav>
+	</header>
+
+	<main class="page-main">
+		<h1 class="page-main__title">Каталог товаров</h1>
+
+		<section class="page-main__catalog catalog">
+			<ul class="catalog__items">
+
+				<li class="catalog__item">
+					<img class="catalog__item-image" src="img/photo-1-mobile.jpg" width="260" height="195" alt="Зайчик-Попрыгайчик">
+					<h3 class="catalog__item-title">
+						Зайчик Попрыгайчик
+					</h3>
+					<p class="catalog__item-intro">Рост 30см, вес 200 г</p>
+						<b class="catalog__item-value catalog__item-value--icon">1 200 руб.</b>
+					</li>
+
+					<li class="catalog__item">
+						<img class="catalog__item-image" src="img/photo-2-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+						<h3 class="catalog__item-title">Корзинка для белья</h3>
+						<p class="catalog__item-intro">Диаметр 15см, высота 10 см</p>
+						<b class="catalog__item-value catalog__item-value--icon">690 руб.</b>					
+					</li>
+
+					<li class="catalog__item">
+						<img class="catalog__item-image" src="img/photo-3-mobile.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+						<h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
+						<p class="catalog__item-intro">Диаметр 30см, высота 30 см</p>
+						<b class="catalog__item-value catalog__item-value--icon">1500 руб.</b>					
+						</li>
+
+						<li class="catalog__item">
+							<h3 class="catalog__item-title catalog__item-title--icon">Процесс производства</h3>
+							<img class="catalog__item-video catalog__item-video--icon" src="img/video-mobile.jpg" width="260" height="150" alt="Видео процесса изготовления товаров">
+							<p class="catalog__item-intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>					
+						</li>						
+					</ul>
+					<a class="catalog__item-purchase button" href="basket.html">Сделать заказ</a>
+				</section>
+			</main>
+			<footer class="page-footer">
+				<ul class="page-footer__social social-list">
+					<li class="social-list__element">
+						<a class="social-list__icon--vk" href="instagram.com">Инстаграм</a>	
+					</li>
+
+					<li class="social-list__element">
+						<a class="social-list__icon--fb" href="facebook.com">Фейсбук</a>
+					</li>
+
+					<li class="social-list__element">
+						<a class="social-list__icon-tw" href="twitter.com">Твиттер</a>
+					</li>
+				</ul>
+
+				<div class="page-footer__copyright copyright">
+					<b class="copyright__text">Разработано</b>
+					<a class="copyright__logo" href="htmlacademy.ru">
+						<img class="copyright__logo--icon" src="img/htmlacademy.svg" width="60" height="60" alt="HTML Academy">
+					</a>
+				</div>
+			</footer>
+
+		</body>
+		</html>
