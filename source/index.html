@@ -1,12 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Мишка</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+	<header class="page-header">
+		<a class="page-header__logo">	
+			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
+		</a>
 
-  </body>
+		<nav class="main-nav">
+			<div class="main-nav__wrapper">
+				<button class="main-nav__toggle" type="button">Открыть меня</button>
+
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="catalog.html">Каталог товаров</a>
+					</li>
+
+					<li class="site-list__item">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
+
+					<li class="site-list__item">
+						<a class="site-list__search" href="search.html">Поиск по сайту</a>
+					</li>
+
+					<li class="site-list__item">
+						<a class="site-list__basket" href="basket.html">Корзина: пока пуста</a>
+					</li>
+				</ul>
+				<button class="main-nav__close" type="button">Закрыть</button>
+			</div>			
+		</nav>
+	</header>
+
+	<main class="page-main">
+
+		<div class="page-main__wrapper">
+			<h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+			<ul class="page-main__list catalog-list">
+
+				<li class="catalog-list__item">
+					<a class="catalog-list__lamp" href="home.html">Предметы интерьера</a>
+				</li>
+
+				<li class="catalog-list__item">
+					<a class="catalog-list__cube" href="toys.html">Детские игрушки</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="product-card">
+			<h2 class="product-card__title">Вязаные корзинки</h2>
+			<b class="product-card__popular">Товар недели</b>
+			<p class="product-card__intro">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
+
+			<table class="product-card__list">
+				<tr>
+					<td class="product-card__options">Цвет:</td>
+					<td class="product-card__description">Тиффани/серый</td>
+				</tr>
+
+				<tr>
+					<td class="product-card__options">Диаметр:</td>
+					<td class="product-card__description">25 см</td>
+				</tr>
+
+				<tr>
+					<td class="product-card__options">Высота:</td>
+					<td class="product-card__description">15 см</td>
+				</tr>
+			</table>
+
+			<a class="product-card__logo">
+				<img class="product-card__logo-image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Вязаные корзинки" >
+			</a>
+
+			<p class="product-card__value">Цена: 990 руб.</p>
+
+			<button class="product-card__button" type="submit">Заказать</button>
+		</section>
+
+		<section class="advantages">
+			<h2 class="advantages__title">Коротко о нас:</h2>
+
+			<ul class="advantages__list">
+				<li class="advantages__item advantages__item--flower">
+					<h3 class="advantages__title">Экологически чистые материалы</h3>
+				</li>
+
+				<li class="advantages__item advantages__item--money">
+					<h3 class="advantages__title">Скандинавский стиль по российской цене</h3>	
+				</li>
+
+				<li class="advantages__item advantages__item--love">
+					<h3 class="advantages__title">Увеличивает лайки на фотографиях</h3>
+				</li>
+
+				<li class="advantages__item advantages__item--ball">
+					<h3 class="advantages__title">Связано вручную с любовью и умилением</h3>
+				</li>
+
+				<li class="advantages__item advantages__item--rocket">
+					<h3 class="advantages__title">Поддержка отечественного производителя</h3>	
+				</li>
+
+				<li class="advantages__item advantages__item--gift">
+					<h3 class="advantages__title">Поставляется в подарочной упаковке</h3>
+				</li>
+			</ul>
+		</section>
+
+		<article class="reviews slider">
+			<h2 class="reviews__title">Отзывы</h2>
+			<blockquote class="reviews__item">
+				Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мише, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+			</blockquote>
+			<cite class="reviews__author">Анастасия Красильникова</cite>
+			<a class="reviews__source" href="twiiter.com/@misssssiskras">@misssssiskras</a>
+
+			
+			<p class="reviews__toggles slider__toggles">
+				<button class="reviews__toggle--prev">Назад</button>
+				<button class="reviews__toggle--next">Вперёд</button>
+			</p>
+
+			<a class="reviews__letter button" href="write-us.html">Написать</a>
+
+		</article>
+
+		<section class="contacts">
+			<h2 class="contacts__title">Контакты</h2>
+			<table class="contacts__table">
+				<tr>
+					<td class="contacts__adress">e-mail:</td>
+					<td class="contacts__description contacts__description--underline">info@mimimishkashop.ru</td>
+				</tr>
+
+				<tr>
+					<td class="contacts__adress">адрес:</td>
+					<td class="contacts__description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+				</tr>
+			</table>
+
+			<div class="contacts__map">
+				<img class="contacts__map-image contacts__map-image--pointer" src="img/map-mobile.jpg" width="322" height="457" alt="Доходный дом Н.А. Мельцера">
+			</div>
+
+			<a href="write-us.html" class="contacts__letter button">Напишите нам</a>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<ul class="page-footer__social social-list">
+			<li class="social-list__element">
+				<a class="social-list__icon--vk" href="instagram.com">Инстаграм</a>	
+			</li>
+			
+			<li class="social-list__element">
+				<a class="social-list__icon--fb" href="facebook.com">Фейсбук</a>
+			</li>
+
+			<li class="social-list__element">
+				<a class="social-list__icon-tw" href="twitter.com">Твиттер</a>
+			</li>
+		</ul>
+
+		<div class="page-footer__copyright copyright">
+			<b class="copyright__text">Разработано</b>
+			<a class="copyright__logo" href="htmlacademy.ru">
+				<img class="copyright__logo--icon" src="img/htmlacademy.svg" width="60" height="60" alt="HTML Academy">
+			</a>
+		</div>
+	</footer>
+
+</body>
 </html>
