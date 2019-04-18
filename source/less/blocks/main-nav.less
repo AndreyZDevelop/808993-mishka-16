@@ -1,3 +1,31 @@
-.main-navigations__block {
-	width: 500px;
+.main-nav__list {
+
+	list-style: none;
 }
+
+.site-list__item {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	padding: 30px 75px;
+
+
+	a {
+		color: black;
+		text-decoration: none;
+		outline: none;
+	}
+
+	&:hover a,
+	&:focus a {
+		color: @focus;
+	}
+
+	&:active a {
+	 color: @active;	
+	}
+
+}
+
+
+
