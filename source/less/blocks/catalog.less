@@ -2,23 +2,45 @@
 	list-style: none;
 }
 
+.catalog__item {
+	border: 1px solid #ededed;
+	margin-bottom: 30px;
+}
+
 .catalog__item-title {
 	font-size: 17px;
 	line-height: 24px;
 	font-weight: 700;
+	padding-left: 29px;
 }
 
 .catalog__item-intro {
+	position: relative;
 	font-size: 13px;
 	line-height: 30px;
 	color: @base-color;
+	padding-left: 29px;
+}
+
+.catalog__item-intro::before {
+	content: "";
+	position: absolute;
+	background-image: url(../img/divider.svg);
+	background-repeat: no-repeat;
+	width: 204px;
+	height: 1px;
+	top: 55px;
 }
 
 .catalog__item-value {
+	display: block;
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #000000;
+	padding-left: 29px;
+	padding-bottom: 30px;
+	padding-top: 55px;
 }
 
 .catalog__item-purchase {

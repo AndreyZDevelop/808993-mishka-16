@@ -1,14 +1,19 @@
 .catalog-list {
+	position: relative;
+	display: block;
 	font-size: 19px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
-
+	padding: 0;
 	list-style: none;
+	margin-top: 250px;
 
 	a {
 		color: #ffffff;
 		text-decoration: none;
+
+
 	}
 
 	&__item:hover a,
@@ -18,9 +23,79 @@
 }
 
 .catalog-list__item:first-child {
-	background-color: #61d1bb
+	height: 103px;
+	background-color: #61d1bb;
 }
 
 .catalog-list__item:last-child {
+	height: 103px;
 	background-color: #56c3b2;
+}
+
+.catalog-list__lamp {
+	position: relative;
+	display: inline-block;
+	width: 103px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 180px;
+}
+
+.catalog-list__lamp::before {
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 62px;
+	background-image: url("../img/icon-interior.svg");
+	background-repeat: no-repeat;
+	opacity: 0.2;
+	right: 35px;
+	bottom: 20px;
+
+}
+
+.catalog-list__cube {
+	position: relative;
+	display: inline-block;
+	width: 103px;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 180px;
+}
+
+.catalog-list__cube::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-image: url("../img/icon-toy.svg");
+	background-repeat: no-repeat;
+	opacity: 0.2;
+	bottom: 20px;
+	right: 25px;
+
+}
+
+@media (min-width: 768px) {
+	.catalog-list {
+		position: relative;
+		display: flex;
+	}
+}
+
+@media (min-width: 768px) {
+	.catalog-list__item {
+		width: 670px;
+		margin-top: 340px;
+	}
+}
+
+@media (min-width: 768px) {
+	.catalog-list::before {
+		content: "";
+		position: absolute;
+		background-image: url(../img/bg-zigzag-fill.svg);
+	}
 }
